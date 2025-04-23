@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МЦ "Пульс" - Политика конфиденциальности</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="https://static.tildacdn.com/tild3761-6430-4363-b663-373930396432/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="medical-header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>Медицинский Центр "Пульс"</span>
+
+            </div>
+            <h1>Политика конфиденциальности</h1>
+            <p>В соответствии с общепринятой политикой конфиденциальности и законодательством РФ</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="policy-container">
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Навигация</h3>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#data-collection" class="active"><i class="fas fa-database"></i> Какие данные собираем</a></li>
+                    <li><a href="#data-usage"><i class="fas fa-laptop-medical"></i> Как используем</a></li>
+                    <li><a href="#data-protection"><i class="fas fa-lock"></i> Защита данных</a></li>
+                    <li><a href="#user-rights"><i class="fas fa-user-shield"></i> Ваши права</a></li>
+                    <li><a href="#contacts"><i class="fas fa-headset"></i> Контакты DPO</a></li>
+                </ul>
+                <div class="consent-box">
+                    <p>Используя наш сервис, Вы соглашаетесь с этой политикой</p>
+                    <button id="consent-btn" class="btn-accept">Я понимаю</button>
+                    <div id="consent-message" class="consent-message" style="display: none;">
+                        <i class="fas fa-check-circle"></i> Вы согласились с политикой конфиденциальности
+                    </div>
+                </div>
+            </div>
+
+            <div class="policy-content">
+                <section id="data-collection" class="policy-section">
+                    <div class="section-header">
+                        <div class="icon-box">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h2>Какие данные мы собираем</h2>
+                    </div>
+                    <div class="data-cards">
+                        <div class="data-card">
+                            <div class="card-icon" style="background-color: #eb600f;">
+                                <i class="fas fa-id-card"></i>
+                            </div>
+                            <h3>Основные данные</h3>
+                            <ul>
+                                <li>ID пользователя Telegram</li>
+                                <li>Имя и фамилия, указанные в Telegram</li>
+                                <li>Username (если есть)</li>
+                            </ul>
+                        </div>
+                        <div class="data-card">
+                            <div class="card-icon" style="background-color: #00a7aa;">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h3>Контактные данные</h3>
+                            <ul>
+                                <li>Номер телефона</li>
+                                <li>Дата последней активности</li>
+                            </ul>
+                        </div>
+                        <div class="data-card">
+                            <div class="card-icon" style="background-color: #6c757d;">
+                                <i class="fas fa-user-check"></i>
+                            </div>
+                            <h3>Согласия</h3>
+                            <ul>
+                                <li>Факт согласия на обработку</li>
+                                <li>Дата получения согласия</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="data-usage" class="policy-section">
+                    <div class="section-header">
+                        <div class="icon-box">
+                            <i class="fas fa-laptop-medical"></i>
+                        </div>
+                        <h2>Как мы используем ваши данные</h2>
+                    </div>
+                    <div class="usage-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Оказание медицинских услуг</h3>
+                                <p>Для записи на прием, напоминаний и коммуникации по вашему запросу.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Улучшение сервиса</h3>
+                                <p>Анализ данных для улучшения работы бота.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Безопасность</h3>
+                                <p>Предотвращение мошенничества и защита от злоупотреблений.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data-flow">
+                        <h3>Схема обработки данных</h3>
+                        <div class="flow-chart">
+                            <div class="flow-item">
+                                <div class="flow-icon">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <p>Пользователь</p>
+                            </div>
+                            <div class="flow-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                            <div class="flow-item">
+                                <div class="flow-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <p>Telegram бот</p>
+                            </div>
+                            <div class="flow-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                            <div class="flow-item">
+                                <div class="flow-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <p>База данных</p>
+                            </div>
+                            <div class="flow-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                            <div class="flow-item">
+                                <div class="flow-icon">
+                                    <i class="fas fa-clinic-medical"></i>
+                                </div>
+                                <p>Медицинский персонал</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="data-protection" class="policy-section">
+                    <div class="section-header">
+                        <div class="icon-box">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h2>Как мы защищаем ваши данные</h2>
+                    </div>
+                    <div class="protection-methods">
+                        <div class="method">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Контроль доступа</h3>
+                            <p>Строгий контроль доступа к данным только для уполномоченного персонала</p>
+                        </div>
+                        <div class="method">
+                            <i class="fas fa-server"></i>
+                            <h3>Безопасное хранение</h3>
+                            <p>Данные хранятся на защищенных серверах с ограниченным доступом</p>
+                        </div>
+                        <div class="method">
+                            <i class="fas fa-file-contract"></i>
+                            <h3>NDA соглашения</h3>
+                            <p>Все сотрудники подписывают соглашения о неразглашении</p>
+                        </div>
+                    </div>
+                    <div class="security-badge">
+                        <div class="badge-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="badge-content">
+                            <h3>Соответствие защите персональных данных</h3>
+                            <p>Наши процессы обработки данных соответствуют требованиям по защите персональных данных</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="user-rights" class="policy-section">
+                    <div class="section-header">
+                        <div class="icon-box">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h2>Ваши права согласно командам в боте</h2>
+                    </div>
+                    <div class="rights-container">
+                        <div class="rights-list">
+                            <div class="right-item">
+                                <div class="right-icon">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                                <div class="right-content">
+                                    <h3>Право на доступ</h3>
+                                    <p>Вы можете запросить копию своих персональных данных в любой момент через команду /mydata в боте</p>
+                                </div>
+                            </div>
+                            <div class="right-item">
+                                <div class="right-icon">
+                                    <i class="fas fa-edit"></i>
+                                </div>
+                                <div class="right-content">
+                                    <h3>Право на исправление</h3>
+                                    <p>Вы можете обновить или исправить неточные данные</p>
+                                </div>
+                            </div>
+                            <div class="right-item">
+                                <div class="right-icon">
+                                    <i class="fas fa-trash-alt"></i>
+                                </div>
+                                <div class="right-content">
+                                    <h3>Право на удаление</h3>
+                                    <p>Вы можете удалить свои данные через команду /gdpr в боте</p>
+                                </div>
+                            </div>
+                            <div class="right-item">
+                                <div class="right-icon">
+                                    <i class="fas fa-ban"></i>
+                                </div>
+                                <div class="right-content">
+                                    <h3>Право на ограничение</h3>
+                                    <p>Вы можете ограничить обработку ваших данных</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rights-actions">
+                            <h3>Как реализовать свои права?</h3>
+                            <p>Все права можно реализовать непосредственно через Telegram-бота:</p>
+                            <div class="bot-commands">
+                                <div class="command">
+                                    <span>/gdpr</span>
+                                    <p>Управление согласием на обработку данных</p>
+                                </div>
+                                <div class="command">
+                                    <span>/mydata</span>
+                                    <p>Просмотр хранимых данных</p>
+                                </div>
+                                <div class="command">
+                                    <span>/delete_me</span>
+                                    <p>Полное удаление всех данных</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contacts" class="policy-section">
+                    <div class="section-header">
+                        <div class="icon-box">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h2>Контакты ответственного за защиту данных</h2>
+                    </div>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h3>Data Protection Place</h3>
+                            <p>Медицинский центр "Пульс"</p>
+                            <div class="contact-info">
+                                <i class="fas fa-envelope"></i>
+                                <span>info@puls48.ru</span>
+                            </div>
+                            <div class="contact-info">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+7 (474) 790-02-20</span>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Юридический адрес</h3>
+                            <p>Россия, г. Елец, ул. Радиотехническая, д. 28А</p>
+                            <div class="contact-info">
+                                <i class="fas fa-clock"></i>
+                                <span>Пн-Вс: 7:00-20:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="complaint-info">
+                        <h3>Подача жалоб</h3>
+                        <p>Если вы считаете, что ваши права по защите данных были нарушены, Вы имеете право подать жалобу в регулирующий орган:</p>
+                        <div class="complaint-org">
+                            <i class="fas fa-gavel"></i>
+                            <div>
+                                <strong>Роскомнадзор</strong>
+                                <p>Уполномоченный орган по защите прав субъектов персональных данных</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="medical-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>Медицинский Центр "Пульс"</span>
+                </div>
+                <div class="footer-links">
+                    <a href="https://puls48.ru">Главная</a>
+                    <a href="https://puls48.ru/services/">Услуги</a>
+                    <a href="https://puls48.ru/company/">О центре</a>
+                    <a href="https://puls48.ru/contacts">Контакты</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://t.me/MCPulsBot"><i class="fab fa-telegram"></i></a>
+                    <a href="https://wa.me/79202412208"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://vk.com/club201378349"><i class="fab fa-vk"></i></a>
+                    <a href="https://ok.ru/profile/582324113799"><i class="fab fa-odnoklassniki"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 МЦ "Пульс". Все права защищены.</p>
+                <p>Последнее обновление политики: 01.01.2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+<button id="theme-toggle">
+    <i class="fas fa-moon"></i>
+</button>
+
+</body>
+</html>
