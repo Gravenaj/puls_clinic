@@ -7,13 +7,6 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
-
 /* Заголовок */
 .medical-header {
     background: linear-gradient(135deg, #00a7aa, #eb600f);
@@ -32,6 +25,14 @@ body {
     font-size: 24px;
     margin-bottom: 10px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo span {
+    word-break: break-word;
+    max-width: 100%
 }
 
 .logo i {
@@ -407,9 +408,11 @@ body.dark-theme .contact-card {
 
 /* Адаптивность */
 .container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
