@@ -380,6 +380,26 @@ body.dark-theme .contact-card {
     border-color: #444;
 }
 
+body.dark-theme .policy-section,
+body.dark-theme .sidebar,
+body.dark-theme .data-card,
+body.dark-theme .method,
+body.dark-theme .right-item,
+body.dark-theme .contact-card {
+    background-color: var(--dark-card);
+    color: var(--dark-text);
+    border: 1px solid #444; /* тонкая тёмная рамка */
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05); /* лёгкая белая тень */
+}
+
+body.dark-theme .policy-container {
+    background-color: var(--dark-bg);
+}
+
+body.dark-theme .container {
+    background-color: var(--dark-bg);
+}
+
 /* Кнопка переключения темы */
 #theme-toggle {
     position: fixed;
