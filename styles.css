@@ -396,9 +396,7 @@ body.dark-theme .policy-container {
     background-color: var(--dark-bg);
 }
 
-body.dark-theme .container {
-    background-color: var(--dark-bg);
-}
+
 
 /* Кнопка переключения темы */
 #theme-toggle {
