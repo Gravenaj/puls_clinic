@@ -1,0 +1,536 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Заголовок */
+.medical-header {
+    background: linear-gradient(135deg, #00a7aa, #eb600f);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 5px solid #f7f7f7;
+}
+
+.medical-header h1 {
+    font-size: clamp(1.2rem, 4vw, 2rem); /* адаптивный размер */
+    text-align: center;
+    word-break: break-word; /* позволяет перенос слов */
+}
+
+.logo {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.logo i {
+    margin-right: 10px;
+}
+
+/* Боковая панель */
+.policy-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sidebar {
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+    padding: 20px;
+    flex: 1 1 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+    flex-shrink: 0;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #00a7aa;
+    gap: 10px;
+}
+
+.sidebar-header i {
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.nav-links li {
+    margin-bottom: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #eb600f;
+    color: white;
+}
+
+.nav-links i {
+    margin-right: 10px;
+}
+
+.consent-box {
+    background-color: #f7f7f7;
+    padding: 10px 16px;
+    border-left: 4px solid #00a7aa;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.btn-accept {
+    margin-top: 10px;
+    background-color: #00a7aa;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-accept:hover {
+    background-color: #eb600f;
+}
+
+/* Основной контент */
+.policy-content {
+    flex: 3 1 700px;
+}
+
+/* Разделы */
+.policy-section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon-box {
+    background-color: #00a7aa;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.data-cards, .protection-methods, .rights-list, .contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.data-card, .method, .right-item, .contact-card {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 250px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.card-icon, .right-icon, .contact-icon {
+    font-size: 24px;
+    color: white;
+    background-color: #00a7aa;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.step {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.step-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #eb600f;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* Footer */
+.medical-footer {
+    background-color: #00a7aa;
+    color: white;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-logo, .footer-links, .footer-social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-links a, .footer-social a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover, .footer-social a:hover {
+    color: #eb600f;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-left: 532px;
+    font-size: 14px;
+    text-align: left;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 992px) {
+    .policy-container {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .sidebar {
+        position: static;
+        top: auto;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .data-cards, .protection-methods, .rights-list, .contact-cards {
+        flex-direction: column;
+    }
+
+    .step {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+/* ======= Тёмная тема ======= */
+body.dark-theme {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+body.dark-theme .medical-header {
+    background: linear-gradient(135deg, #006d6d, #a9420b);
+    border-bottom-color: #1e1e1e;
+}
+
+body.dark-theme .sidebar,
+body.dark-theme .policy-section {
+    background-color: var(--dark-card);
+    box-shadow: none;
+}
+
+body.dark-theme .nav-links a {
+    color: var(--dark-text);
+}
+
+body.dark-theme .nav-links a:hover,
+body.dark-theme .nav-links a.active {
+    background-color: var(--primary);
+    color: white;
+}
+
+body.dark-theme .consent-box {
+    background-color: #333;
+    border-left-color: var(--secondary);
+}
+
+body.dark-theme .btn-accept {
+    background-color: var(--secondary);
+}
+
+body.dark-theme .btn-accept:hover {
+    background-color: var(--primary);
+}
+
+body.dark-theme .data-card,
+body.dark-theme .method,
+body.dark-theme .right-item,
+body.dark-theme .contact-card {
+    background-color: #3a3a3a;
+}
+
+body.dark-theme .medical-footer {
+    background-color: #006d6d;
+}
+
+body.dark-theme .footer-links a,
+body.dark-theme .footer-social a {
+    color: #eaeaea;
+}
+
+body.dark-theme .footer-links a:hover,
+body.dark-theme .footer-social a:hover {
+    color: var(--primary);
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 20px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.theme-toggle:hover {
+    color: #00a7aa;
+}
+
+:root {
+    --primary: #eb600f;
+    --secondary: #00a7aa;
+    --light-bg: #f7f7f7;
+    --dark-bg: #1e1e1e;
+    --dark-card: #2a2a2a;
+    --dark-text: #f0f0f0;
+    --light-text: #333;
+}
+
+body {
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--light-text);
+    margin: 0;
+    padding: 0;
+}
+
+body.dark-theme {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+body.dark-theme .policy-container,
+body.dark-theme .policy-section,
+body.dark-theme .sidebar,
+body.dark-theme .data-card,
+body.dark-theme .method,
+body.dark-theme .right-item,
+body.dark-theme .contact-card {
+    background-color: var(--dark-card);
+    color: var(--dark-text);
+    border-color: #444;
+}
+
+body.dark-theme .policy-section,
+body.dark-theme .sidebar,
+body.dark-theme .data-card,
+body.dark-theme .method,
+body.dark-theme .right-item,
+body.dark-theme .contact-card {
+    background-color: var(--dark-card);
+    color: var(--dark-text);
+    border: 1px solid #444; /* тонкая тёмная рамка */
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05); /* лёгкая белая тень */
+}
+
+body.dark-theme .policy-container {
+    background-color: var(--dark-bg);
+}
+
+
+
+/* Кнопка переключения темы */
+#theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    z-index: 999;
+    transition: background-color 0.3s;
+}
+
+#theme-toggle:hover {
+    background-color: #d3530d;
+}
+
+/* Адаптивность */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px; /* добавим внутренние отступы */
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
+    .policy-container {
+        flex-direction: column;
+        display: flex;
+    }
+    .sidebar {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+        margin-top: 1rem;
+    }
+    .policy-content {
+        width: 100%;
+    }
+    .data-cards, .usage-steps, .protection-methods, .rights-list, .contact-cards {
+        flex-direction: column;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-links, .footer-social {
+        margin-top: 10px;
+    }
+
+}
+
+/* Иконка темы */
+#theme-toggle i {
+    font-size: 1.2rem;
+}
+
+.consent-message {
+    color: #00a7aa;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #f0f9f9;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.consent-message i {
+    color: #00a7aa;
+}
+
+.btn-accept.hidden {
+    display: none;
+}
+
+.logo{
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .medical-header h1 {
+        font-size: 1.4rem;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-links a {
+        font-size: 0.95rem;
+    }
+
+    .flow-chart {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 1024px) {
+    .policy-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    .policy-content {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
